@@ -24,18 +24,17 @@ OVS的大部分代码，由平台独立的C写出，容易移植到到其他的�
  Apache 2 license.  Our goal is to implement a production quality switch
  platform that supports standard management interfaces and opens the forwarding
  functions to programmatic extension and control.
-
-.. Open vSwitch is well suited to function as a virtual switch in VM environments.
+ Open vSwitch is well suited to function as a virtual switch in VM environments.
  In addition to exposing standard control and visibility interfaces to the
  virtual networking layer, it was designed to support distribution across
  multiple physical servers.  Open vSwitch supports multiple Linux-based
  virtualization technologies including Xen/XenServer, KVM, and VirtualBox.
-
-.. The bulk of the code is written in platform-independent C and is easily ported
+ The bulk of the code is written in platform-independent C and is easily ported
  to other environments.  The current release of Open vSwitch supports the
  following features:
 
-- Standard 802.1Q VLAN model with trunk and access ports `VLAN <study/802.1Q-VLAN.rst>`__.
+-标准的 802.1Q VLAN模型，包含trunk和接入ports `什么是VLAN <study/802.1Q-VLAN.rst>`__.
+- Standard 802.1Q VLAN model with trunk and access ports 
 - NIC bonding with or without LACP on upstream switch
 - NetFlow, sFlow(R), and mirroring for increased visibility
 - QoS (Quality of Service) configuration, plus policing
