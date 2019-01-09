@@ -10,25 +10,30 @@ Open vSwitch
 .. image:: https://ci.appveyor.com/api/projects/status/github/openvswitch/ovs?branch=master&svg=true&retina=true
     :target: https://ci.appveyor.com/project/blp/ovs/history
 
-What is Open vSwitch?
+.. What is Open vSwitch?
+什么是OVS
 ---------------------
 
-Open vSwitch is a multilayer software switch licensed under the open source
-Apache 2 license.  Our goal is to implement a production quality switch
-platform that supports standard management interfaces and opens the forwarding
-functions to programmatic extension and control.
+.. Open vSwitch is a multilayer software switch licensed under the open source
+   pache 2 license.  Our goal is to implement a production quality switch
+   platform that supports standard management interfaces and opens the forwarding
+   functions to programmatic extension and control.
+   Open vSwitch is well suited to function as a virtual switch in VM environments.
+   In addition to exposing standard control and visibility interfaces to the
+   virtual networking layer, it was designed to support distribution across
+   multiple physical servers.  Open vSwitch supports multiple Linux-based
+   virtualization technologies including Xen/XenServer, KVM, and VirtualBox.
+ The bulk of the code is written in platform-independent C and is easily ported
+ to other environments.  The current release of Open vSwitch supports the
+ following features:
+OVS 是一个开源的多层软件交换机。目的是部署一个高质量的可创造性的交换机平台，能够支持标准的接口管理和开放的转发函数，以实现可编程的扩展和控制。
 
-Open vSwitch is well suited to function as a virtual switch in VM environments.
-In addition to exposing standard control and visibility interfaces to the
-virtual networking layer, it was designed to support distribution across
-multiple physical servers.  Open vSwitch supports multiple Linux-based
-virtualization technologies including Xen/XenServer, KVM, and VirtualBox.
+OVS 在作为虚拟机环境下的虚拟交换机是一款非常合适的功能。除了对虚拟网络层，暴露标准的控制和接口，它被设计支持多个分布式的物理服务器的连接。OVS在多款基于linux的虚拟化技术兼容，包含：Xen/XenServer，KVM，和VirtualBox
 
-The bulk of the code is written in platform-independent C and is easily ported
-to other environments.  The current release of Open vSwitch supports the
-following features:
+OVS的大部分代码，由平台独立的C写出，容易移植到到其他的环境。当前版本的OVS支持下列的功能：
 
 - Standard 802.1Q VLAN model with trunk and access ports
+
 - NIC bonding with or without LACP on upstream switch
 - NetFlow, sFlow(R), and mirroring for increased visibility
 - QoS (Quality of Service) configuration, plus policing
