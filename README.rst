@@ -18,18 +18,20 @@ Open vSwitch
 OVS 是一个开源的多层软件交换机。目的是，部署一个高质量的可创造性的交换机平台，
 能够支持标准的接口管理和开放的转发函数，以实现可编程的扩展和控制。
 .. Apache 2 license.  Our goal is to implement a production quality switch
-.. platform that supports standard management interfaces and opens the forwarding
-.. functions to programmatic extension and control.
+   platform that supports standard management interfaces and opens the forwarding
+   functions to programmatic extension and control.
+   Open vSwitch is well suited to function as a virtual switch in VM environments.
+   In addition to exposing standard control and visibility interfaces to the
+   virtual networking layer, it was designed to support distribution across
+   multiple physical servers.  Open vSwitch supports multiple Linux-based
+   virtualization technologies including Xen/XenServer, KVM, and VirtualBox.
+OVS 是一款非常适合的功能，作为虚拟机环境下的虚拟交换机。除了对虚拟网络层，暴露标准的控制和可见的接口，
+它被设计支持分布式的，连接多个物理服务器。OVS支持多款基于linux的虚拟化技术，包含：Xen/XenServer，KVM，和VirtualBox
 
-Open vSwitch is well suited to function as a virtual switch in VM environments.
-In addition to exposing standard control and visibility interfaces to the
-virtual networking layer, it was designed to support distribution across
-multiple physical servers.  Open vSwitch supports multiple Linux-based
-virtualization technologies including Xen/XenServer, KVM, and VirtualBox.
-
-The bulk of the code is written in platform-independent C and is easily ported
-to other environments.  The current release of Open vSwitch supports the
-following features:
+.. The bulk of the code is written in platform-independent C and is easily ported
+ to other environments.  The current release of Open vSwitch supports the
+ following features:
+大部分代码，由平台独立的C写出，容易移植到到其他的环境。当前版本的OVS支持下列的功能：
 
 - Standard 802.1Q VLAN model with trunk and access ports
 - NIC bonding with or without LACP on upstream switch
