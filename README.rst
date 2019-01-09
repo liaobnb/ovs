@@ -10,13 +10,16 @@ Open vSwitch
 .. image:: https://ci.appveyor.com/api/projects/status/github/openvswitch/ovs?branch=master&svg=true&retina=true
     :target: https://ci.appveyor.com/project/blp/ovs/history
 
-What is Open vSwitch?
+.. What is Open vSwitch?
+什么是OVS
 ---------------------
 
-Open vSwitch is a multilayer software switch licensed under the open source
-Apache 2 license.  Our goal is to implement a production quality switch
-platform that supports standard management interfaces and opens the forwarding
-functions to programmatic extension and control.
+.. Open vSwitch is a multilayer software switch licensed under the open source
+OVS 是一个开源的多层软件交换机。目的是，部署一个高质量的可创造性的交换机平台，
+能够支持标准的接口管理和开放的转发函数，以实现可编程的扩展和控制。
+.. Apache 2 license.  Our goal is to implement a production quality switch
+.. platform that supports standard management interfaces and opens the forwarding
+.. functions to programmatic extension and control.
 
 Open vSwitch is well suited to function as a virtual switch in VM environments.
 In addition to exposing standard control and visibility interfaces to the
