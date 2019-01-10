@@ -10,7 +10,6 @@ Open vSwitch
 .. image:: https://ci.appveyor.com/api/projects/status/github/openvswitch/ovs?branch=master&svg=true&retina=true
     :target: https://ci.appveyor.com/project/blp/ovs/history
 
-.. What is Open vSwitch?
 
 什么是OVS
 ---------------------
@@ -33,7 +32,7 @@ OVS的大部分代码，由平台独立的C写出，容易移植到到其他的�
  to other environments.  The current release of Open vSwitch supports the
  following features:
 
--标准的 802.1Q VLAN模型，包含trunk和接入ports `什么是VLAN <study/802.1Q-VLAN.rst>`__.
+-标准的 802.1Q VLAN模型，包含trunk和接入ports `什么是VLAN <study/802.1Q-VLAN.md>`__.
 - Standard 802.1Q VLAN model with trunk and access ports 
 - NIC bonding with or without LACP on upstream switch
 - NetFlow, sFlow(R), and mirroring for increased visibility
