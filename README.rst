@@ -32,8 +32,8 @@ OVS的大部分代码，由平台独立的C写出，容易移植到到其他的�
  to other environments.  The current release of Open vSwitch supports the
  following features:
 
-- Standard 802.1Q VLAN model with trunk and access ports `trunk与access <study/802.1Q-VLAN.md>`__.
-- NIC bonding with or without LACP on upstream switch https://www.cnblogs.com/taosim/articles/4378691.html
+- Standard 802.1Q VLAN model with trunk and access ports [`trunk与access <study/802.1Q-VLAN.md>`__.]
+- NIC bonding with or without LACP on upstream switch  [`LACP <study/LACP.md>`__.]
 - NetFlow, sFlow(R), and mirroring for increased visibility
 - QoS (Quality of Service) configuration, plus policing
 - Geneve, GRE, VXLAN, STT, and LISP tunneling
