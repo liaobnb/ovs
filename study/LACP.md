@@ -1,5 +1,3 @@
-[TOC]
-
 # LACP链路聚合控制协议
 
 参考：[LACP] (https://www.cnblogs.com/taosim/articles/4378691.html)
@@ -22,12 +20,12 @@
 
  在选择端口做端口聚合或端口隧道(port channel)时，每个端口需要互相兼容，可以在允许将端口加入端口聚合组(Port Channel Group)之前，检查端口的运行属性，兼容性检查通常包括以下接口运行属性：
 
-　- Port Mode
+ - Port Mode
 
-　- Access VLAN
+ - Access VLAN
 
-　- Trunk native VLAN
+ - Trunk native VLAN
+ 
+ - 允许的VLAN列表
 
-　- 允许的VLAN列表
-
-　- Speed
+ - Speed
