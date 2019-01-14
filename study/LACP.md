@@ -33,14 +33,19 @@
 
  ## Link Aggregation Control Protocol (LACP)
 
- LACP是通过向所有启用LACP协议的链路发送LACPDU Frame来工作的，如果发现链路另一端的设备也启用了LACP，LACP将独自在同一条链路上发送Frame，使得两者能够发现它们之间的多条链路，并将它们合并成单条逻辑链路。
+ - LACP是通过向所有启用LACP协议的链路发送LACPDU Frame来工作的，如果发现链路另一端的设备也启用了LACP，LACP将独自在同一条链路上发送Frame，使得两者能够发现它们之间的多条链路，并将它们合并成单条逻辑链路。
 
- LACP可以配置为两种模式中的一种：Active或Passive。在Active模式下，LACP主动在配置的链路上发送Frame;在Passive模式下，LACP的反应是“speak when spoken to”，从而可以作为控制意外环路的一种方法(只要其他设备在Active模式下)。
+ - LACP可以配置为两种模式中的一种：Active或Passive。在Active模式下，LACP主动在配置的链路上发送Frame;在Passive模式下，LACP的反应是“speak when spoken to”，从而可以作为控制意外环路的一种方法(只要其他设备在Active模式下)。
  
- IEEE 802.3ad定义的LAC(Link Aggregation Group)是一个允许交换机自动协商端口绑定链路的协议，通过发送LACP Frame给Peer来实现。这些Frame在支持port channel的交换机端口之间进行交换，从而学习【邻居身份】以及【port group capability】并与本地交换机对比，然后LACP为port channel的端点分配角色。
+ - IEEE 802.3ad定义的LAC(Link Aggregation Group)是一个允许交换机自动协商端口绑定链路的协议，通过发送LACP Frame给Peer来实现。这些Frame在支持port channel的交换机端口之间进行交换，从而学习【邻居身份】以及【port group capability】并与本地交换机对比，然后LACP为port channel的端点分配角色。
 
- 系统优先级最低的交换机根据端口优先级决定哪些端口可在某一时段作为端口聚合的Active port。例如，一组8 link的port channel，在任何时候LACP选择4个优先级最高的端口作为Active port，通常数值越小的端口优先级越高。另外8条链路置于hot-standby状态，如果一条Active Link down，就会激活其它的链路。端口优先级是可配置的，如果没有配置，则使用不同厂商自己的默认值。如果端口使用了相同的值，厂商通常会实现一个“tie breaker”，比如lower port number作为Active port，即port 1/1 > port 1/5。
+ - 系统优先级最低的交换机根据端口优先级决定哪些端口可在某一时段作为端口聚合的Active port。例如，一组8 link的port channel，在任何时候LACP选择4个优先级最高的端口作为Active 
 
- Port Channel中的每一个端口必须分配同样且唯一的channel group number，LACP自动在【配置为使用LACP的端口上】配置一个等于channel group number的管理键值(Administrative key value)，该管理键值定义了端口与其他端口聚合的能力(ability)。一个端口与其他端口做聚合的能力取决于带宽、双工模式、点对点或共享介质的状态。通道协商必须设置为ON(无条件通道;没有LACP协商)，Passive(被动监听并等待询问)或Active(主动询问)
+ - port，通常数值越小的端口优先级越高。另外8条链路置于hot-standby状态，如果一条Active Link down，就会激活其它的链路。端口优先级是可配置的，如果没有配置，则使用不同厂商自己的默认值。如果端口使用了相同的值，厂商通常会实现一个“tie breaker”，比如lower port number作为Active port，即port 1/1 > port 1/5。
+
+ - Port Channel中的每一个端口必须分配同样且唯一的channel group 
+ number，LACP自动在【配置为使用LACP的端口上】配置一个等于channel group number的管理键值(Administrative key value)，该管理键值定义了端口与其他端口聚合的能力(ability)
+ 。一个端口与其他端口做聚合的能力取决于带宽、双工模式、点对点或共享介质的状态。通道协商必须设置为ON(无条件通道;没有LACP协商)，Passive(被动监听并等待询问)或Active(主动询问)
+ 
 
  
