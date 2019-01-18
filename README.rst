@@ -42,14 +42,14 @@ OVS的大部分代码，由平台独立的C写出，容易移植到到其他的�
 - Transactional configuration database with C and Python bindings
 - High-performance forwarding using a Linux kernel module
 
-..The included Linux kernel module supports Linux 3.10 and up.
+.. The included Linux kernel module supports Linux 3.10 and up.
 
 包含 linux 内核 模块 支持， linux 3.10 及以上的版本
 
 ovs 能够 完全运行在 用户空间，不需要 内核 支持。 用户空间的 部署 更容易 port 。 在用户空间的ovs 能够 允许
 Linux 内核 和 DPDK 设备。 注意： 有 datapath 的非DPDK的设备，被认为 在 性能上 开销 更大。
 
-..Open vSwitch can also operate entirely in userspace without assistance from
+.. Open vSwitch can also operate entirely in userspace without assistance from
  a kernel module.  This userspace implementation should be easier to port than
  the kernel-based switch. OVS in userspace can access Linux or DPDK devices.
  Note Open vSwitch with userspace datapath and non DPDK devices is considered
@@ -58,7 +58,7 @@ Linux 内核 和 DPDK 设备。 注意： 有 datapath 的非DPDK的设备，被
 What's here?
 ------------
 
-..The main components of this distribution are:
+.. The main components of this distribution are:
 
 ovs的主要组成部分：
 
