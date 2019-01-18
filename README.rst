@@ -43,6 +43,7 @@ OVS的大部分代码，由平台独立的C写出，容易移植到到其他的�
 - High-performance forwarding using a Linux kernel module
 
 ..The included Linux kernel module supports Linux 3.10 and up.
+
 包含 linux 内核 模块 支持， linux 3.10 及以上的版本
 
 ovs 能够 完全运行在 用户空间，不需要 内核 支持。 用户空间的 部署 更容易 port 。 在用户空间的ovs 能够 允许
@@ -58,6 +59,7 @@ What's here?
 ------------
 
 ..The main components of this distribution are:
+
 ovs的主要组成部分：
 
 - ovs-vswitchd, a daemon that implements the switch, along with a companion
