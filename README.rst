@@ -34,7 +34,7 @@ OVS的大部分代码，由平台独立的C写出，容易移植到到其他的�
 
 - Standard 802.1Q VLAN model with trunk and access ports [`trunk与access <study/802.1Q-VLAN.md>`__.]
 - NIC bonding with or without LACP on upstream switch  [`LACP <study/LACP.md>`__.]
-- NetFlow, sFlow(R), and mirroring for increased visibility
+- NetFlow, sFlow(R), and mirroring for increased visibility 
 - QoS (Quality of Service) configuration, plus policing
 - Geneve, GRE, VXLAN, STT, and LISP tunneling
 - 802.1ag connectivity fault management
@@ -42,18 +42,23 @@ OVS的大部分代码，由平台独立的C写出，容易移植到到其他的�
 - Transactional configuration database with C and Python bindings
 - High-performance forwarding using a Linux kernel module
 
-The included Linux kernel module supports Linux 3.10 and up.
+..The included Linux kernel module supports Linux 3.10 and up.
+包含 linux 内核 模块 支持， linux 3.10 及以上的版本
 
-Open vSwitch can also operate entirely in userspace without assistance from
-a kernel module.  This userspace implementation should be easier to port than
-the kernel-based switch. OVS in userspace can access Linux or DPDK devices.
-Note Open vSwitch with userspace datapath and non DPDK devices is considered
-experimental and comes with a cost in performance.
+ovs 能够 完全运行在 用户空间，不需要 内核 支持。 用户空间的 部署 更容易 port 。 在用户空间的ovs 能够 允许
+Linux 内核 和 DPDK 设备。 注意： 有 datapath 的非DPDK的设备，被认为 在 性能上 开销 更大。
+
+..Open vSwitch can also operate entirely in userspace without assistance from
+ a kernel module.  This userspace implementation should be easier to port than
+ the kernel-based switch. OVS in userspace can access Linux or DPDK devices.
+ Note Open vSwitch with userspace datapath and non DPDK devices is considered
+ experimental and comes with a cost in performance.
 
 What's here?
 ------------
 
-The main components of this distribution are:
+..The main components of this distribution are:
+ovs的主要组成部分：
 
 - ovs-vswitchd, a daemon that implements the switch, along with a companion
   Linux kernel module for flow-based switching.
@@ -68,7 +73,9 @@ The main components of this distribution are:
   ovs-vswitchd.
 - ovs-appctl, a utility that sends commands to running Open vSwitch daemons.
 
-Open vSwitch also provides some tools:
+..Open vSwitch also provides some tools:
+
+ovs 提供的工具 如下：
 
 - ovs-ofctl, a utility for querying and controlling OpenFlow switches and
   controllers.
